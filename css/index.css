@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.logon {
+    position: relative;
+    top: 100px;
+    left: 70%;
+}
+
+.logon h4 {
+    color: rgba(240, 248, 255, 0.4);
+    font-family: "Microsoft yahei";
+}
+
+.logon h4 input {
+    background-color: rgba(240, 248, 255, 0.2);
+    border-radius: 5px;
+    border: 0px solid transparent;
+}
+
+.logon>input {
+    margin-left: 90px;
+    padding: 1px 33px;
+    border-radius: 5px;
+    border: 0px solid transparent;
+    background-color: rgba(0, 153, 255, 0.5);
+    font-size: 13px;
+    color: #fff;
+}
+
+.logon h5 {
+    color: rgba(240, 248, 255, 0.4);
+}
+
+.logon h5 a {
+    margin-left: 10px;
+    color: rgba(135, 206, 235, 0.7);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kb</title>
+    <link rel="stylesheet" href="css/kb.css">
+</head>
+
+<body>
+    <div class="w">
+        <div class="kb" onclick="kbclick()"></div>
+        <div class="nav">
+            <p>工具栏</p>
+            <div class="chui" onclick="cursor_chui()">
+                <img src="kbimages/chui.png" alt="">
+                <p>打咖波</p>
+            </div>
+            <div class="hand" onclick="cursor_hand()">
+                <img src="kbimages/hand.png" alt="">
+                <p>抚摸</p>
+            </div>
+            <div class="food" onclick="cursor_food()">
+                <img src="kbimages/food.png" alt="">
+                <p>喂食</p>
+            </div>
+            <div class="mai" onclick="chuqin()">
+                <img src="kbimages/sega.png" alt="">
+                <p>出勤</p>
+            </div>
+            <div class="shubiao" onclick="cursor_shubiao()">
+                <img src="kbimages/default.jpeg" alt="">
+                <p>鼠标</p>
+            </div>
+        </div>
+        <div class="status">
+            <h3>咖波状态:</h3>
+            <h5>生命值:<span id="healthstatus"></span></h5>
+            <h5>心情值:<span id="mood"></span></h5>
+            <h5>好感度:<span id="favorability"></span></h5>
+            <h5>理智值:<span id="intelligence"></span></h5>
+            <h5>饱腹度:<span id="hungry"></span></h5>
+        </div>
+        <a href="#" class="r1">
+            <div class="home" onclick="backhome()">
+                <p>回家</p>
+            </div>
+        </a>
+        <a href="#" class="r2">
+            <div class="outdoor" onclick="goout()">
+                <p>出门</p>
+            </div>
+        </a>
+        <a href="#" class="r3">
+            <div class="sleep" onclick="sleep()">
+                <p>睡会觉</p>
+            </div>
+        </a>
+        <!-- 出勤框模块 -->
+        <div class="chuqin">
+            <div class="close" onclick="buchuqin()"><img src="images/close.png" alt=""></div>
+            <div class="choose">
+                <div class="chaoshangji">
+                    <p>随机超上级</p>
+                    <input type="button" value="越级" onclick="chaoshangji()">
+                </div>
+                <div class="shangji">
+                    <p>随机上级</p>
+                    <input type="button" value="下埋" onclick="shangji()">
+                </div>
+                <div class="song">
+                    <p>匹配到的歌曲</p>
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+        <!-- rain模块 -->
+        <div class="rain">
+            <span class="s1 jue">我会一直看着你0 0</span>
+            <span class="s2 jue">我会一直看着你0 0</span>
+            <span class="s3 jue">我会一直看着你0 0</span>
+            <span class="s4 jue">我会一直看着你0 0</span>
+            <span class="s5 jue">我会一直看着你0 0</span>
+            <span class="s6 jue">我会一直看着你0 0</span>
+            <span class="s7 jue">我会一直看着你0 0</span>
+            <span class="s8 jue">我会一直看着你0 0</span>
+            <span class="s9 jue">我会一直看着你0 0</span>
+            <span class="s10 jue">我会一直看着你0 0</span>
+            <span class="s11 jue">我会一直看着你0 0</span>
+            <span class="s12 jue">我会一直看着你0 0</span>
+            <span class="s13 jue">我会一直看着你0 0</span>
+            <span class="s14 jue">我会一直看着你0 0</span>
+            <span class="s15 jue">我会一直看着你0 0</span>
+            <span class="s16 jue">我会一直看着你0 0</span>
+            <span class="s17 jue">我会一直看着你0 0</span>
+            <span class="s18 jue">我会一直看着你0 0</span>
+            <span class="s19 jue">我会一直看着你0 0</span>
+            <span class="s20 jue">我会一直看着你0 0</span>
+        </div>
+        <!-- mujica -->
+        <div class="computer" onclick="mujicaon()">
+            <div class="bubble">
+                <p>试着点击左侧电脑上网吧</p>
+            </div>
+        </div>
+        <div class="mujica">
+            <p>咖 波 的 电 脑</p>
+            <div class="close" onclick="mujicaoff()">x</div>
+            <div class="content">
+                <div class="anime" onclick="shiton()">
+                    <p>热门番剧</p>
+                </div>
+                <div class="any">
+                    <div class="que">?</div>
+                    <p>敬请期待</p>
+                </div>
+            </div>
+            <div class="movie">
+                <video src="anime/mujica.mp4" controls="controls" width="500px"></video>
+            </div>
+        </div>
+    </div>
+
+    <script src="kb.js"></script>
+</body>
+
+</html>
