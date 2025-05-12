@@ -151,6 +151,9 @@ function chaoshangji() {
     if (kb.mood <= 0) {
         kbgo()
     }
+    if (kb.intelligence <= 0) {
+        kbcrazy()
+    }
 }
 //button2
 function shangji() {
@@ -197,6 +200,9 @@ function shangji() {
     }
     if (kb.mood <= 0) {
         kbgo()
+    }
+    if (kb.intelligence <= 0) {
+        kbcrazy()
     }
 }
 //回家
