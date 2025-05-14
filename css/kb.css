@@ -550,13 +550,15 @@
     cursor: pointer;
 }
 
-.mujica .content .any {
+.mujica .content .fish {
     position: absolute;
     top: 130px;
     left: 340px;
     height: 180px;
     width: 180px;
-    background-color: rgba(170, 170, 170, 1);
+    background: url(../images/fishplay.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 
 .mujica .content .anime p {
@@ -567,21 +569,14 @@
     font-family: "youyuan";
 }
 
-.mujica .content .any p {
+.mujica .content .fish p {
     text-align: center;
-    margin-top: 53px;
+    margin-top: 190px;
     font-size: 25px;
     color: gray;
     font-family: "youyuan";
 }
 
-.mujica .content .any .que {
-    text-align: center;
-    font-size: 60px;
-    margin-top: 50px;
-    color: rgba(100, 100, 100, 1);
-    font-weight: 700;
-}
 
 .mujica .movie video {
     display: none;
@@ -589,4 +584,197 @@
     margin-top: 50px;
     left: 50%;
     margin-left: -250px;
+}
+
+.mujica .game {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(../images/sea.png) no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    left: 50%;
+    margin-left: -250px;
+}
+
+.mujica .game .scorenum {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    right: 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mujica .game .timenum {
+    display: block;
+    position: absolute;
+    margin-top: 35px;
+    right: 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.mujica .game .kbfish {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    background: url(../kbimages/kbfish.gif) no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.mujica .game .fish .f1 {
+    display: block;
+    position: absolute;
+    left: -150px;
+    width: 30px;
+    height: 18px;
+    background: url(../kbimages/fish.png) no-repeat;
+    background-size: cover;
+    animation: none;
+}
+
+.mujica .game .fish .f2 {
+    display: block;
+    position: absolute;
+    left: -150px;
+    width: 50px;
+    height: 30px;
+    background: url(../kbimages/fish.png) no-repeat;
+    background-size: cover;
+    animation: none;
+}
+
+.mujica .game .fish .f3 {
+    display: block;
+    position: absolute;
+    left: -150px;
+    width: 70px;
+    height: 42px;
+    background: url(../kbimages/fish.png) no-repeat;
+    background-size: cover;
+    animation: none;
+}
+
+.mujica .game .fish .f4 {
+    display: block;
+    position: absolute;
+    left: -150px;
+    width: 100px;
+    height: 60px;
+    background: url(../kbimages/fish.png) no-repeat;
+    background-size: cover;
+    animation: none;
+}
+
+.mujica .game .fish .f5 {
+    display: block;
+    position: absolute;
+    left: -150px;
+    width: 150px;
+    height: 90px;
+    background: url(../kbimages/fish.png) no-repeat;
+    background-size: cover;
+}
+
+.mujica .game .end {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -200px;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgba(135, 206, 235, 0.8);
+    z-index: 2;
+}
+
+.mujica .game .end .over p:first-child {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.mujica .game .end .over p:last-child {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* 135向右 */
+@keyframes swim1 {
+    from {
+        left: -150px;
+        top: 40px;
+    }
+
+    to {
+        top: 40px;
+        left: 650px;
+    }
+}
+
+@keyframes swim2 {
+    from {
+        left: 650px;
+        top: 50px;
+    }
+
+    to {
+        top: 50px;
+        left: -150px;
+    }
+}
+
+@keyframes swim3 {
+    from {
+        left: -150px;
+        top: 80px;
+    }
+
+    to {
+        top: 80px;
+        left: 650px;
+    }
+}
+
+@keyframes swim4 {
+    from {
+        left: 650px;
+        top: 130px;
+    }
+
+    to {
+        top: 130px;
+        left: -150px;
+    }
+}
+
+@keyframes swim5 {
+    from {
+        left: -150px;
+        top: 160px;
+    }
+
+    to {
+        top: 160px;
+        left: 650px;
+    }
+}
+
+@keyframes swim6 {
+    from {
+        left: 650px;
+        top: 210px;
+    }
+
+    to {
+        top: 210px;
+        left: -150px;
+    }
 }

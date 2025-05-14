@@ -4,7 +4,10 @@ const kb = {
     mood: 100,
     favorability: 50,
     intelligence: 50,
-    hungry: 50
+    hungry: 50,
+    score: 0,
+    time: 300,
+    scale: 1
 }
 //获取更新状态值
 document.getElementById('intelligence').textContent = kb.intelligence
@@ -249,6 +252,7 @@ function mujicaoff() {
     const com = document.querySelector('.mujica')
     com.style.visibility = 'hidden'
     shitoff()
+    fishoff()
 }
 function lose() {
     kb.intelligence -= 1
@@ -257,7 +261,9 @@ function lose() {
         kbcrazy()
     }
 }
+
 let intelligenceInterval
+
 function shiton() {
     const con = document.querySelector('.mujica .content')
     con.style.display = 'none'
